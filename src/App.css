@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .container {
+  padding: 10px;
+  padding-inline: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+} */
+
+.todo-add {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 5px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #c1bfb5;
+}
+
+.todo-add label {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.todo-add input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1em;
+}
+
+.todo-add button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.todo-add button:hover {
+  background-color: #45a049;
+}
+
+.filter-box {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.filter-box span {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.filter-box div {
+  margin-top: 10px;
+}
+
+.filter-box label {
+  margin-right: 5px;
+}
+
+.filter-box select {
+  padding: 5px;
+  border: 5px solid #acbea3;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+/* Optional: Style for the selected option */
+.filter-box select.All {
+  color: blue;
+}
+
+.filter-box select.notCompleted {
+  color: orange;
+}
+
+.filter-box select.completed {
+  color: green;
+}
+
+input::selection {
+  background-color: aqua;
+  color: black;
+}
+
+option {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.todo-card {
+  flex: 0 0 auto; /* Maintain original width for each card */
+  max-width: 400px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #acbea3;
+}
+.todo-card-container {
+  display: flex;
+  gap: 20px; /* Adjust the gap between cards */
+  overflow-x: auto; /* Adjust the gap between cards */
+}
+.card--name,
+.card--description,
+.todo--status {
+  margin-bottom: 15px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.todo--card-name,
+.todo--card-decription {
+  color: #333;
+}
+
+.card-status {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.card-status.notCompleted {
+  color: orange;
+}
+
+.card-status.completed {
+  color: green;
+}
+
+.todo--button-group button {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.todo--button-group .todo--card-edit {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.todo--button-group .todo--card-edit:hover {
+  background-color: #2980b9;
+}
+
+.todo--button-group .todo--card-delete {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.todo--button-group .todo--card-delete:hover {
+  background-color: #c0392b;
+}
+
+@media screen and (width <=880px) {
+  .todo-add {
+    flex-direction: column;
+  }
+}
+
+@media screen and (width <=700px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
+  }
+}
