@@ -28,4 +28,4 @@ To run this project, ensure that you have Node Package Manager (NPM) installed.
 
 ## Deployment
 
-The application is deployed and can be accessed here : [Todo App]().
+The application is deployed and can be accessed here : [Todo App](https://todo-lizt.netlify.app/).
